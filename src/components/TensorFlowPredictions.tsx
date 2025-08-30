@@ -70,7 +70,7 @@ export const TensorFlowPredictions: React.FC<TensorFlowPredictionsProps> = ({ ex
     <Card className="bg-white shadow-lg border border-card-bg">
       <CardHeader>
         <CardTitle className="text-charcoal flex items-center gap-2">
-          <Brain className="w-5 h-5 text-purple-600" />
+          <Brain className="w-5 h-5 text-indigo-700" />
           AI Spending Predictions
         </CardTitle>
         <p className="text-sm text-muted-foreground">
@@ -124,7 +124,7 @@ export const TensorFlowPredictions: React.FC<TensorFlowPredictionsProps> = ({ ex
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="text-center p-3 bg-purple-50 rounded-lg">
-              <p className="text-xs text-purple-600 font-medium">Predicted Next Month</p>
+              <p className="text-xs text-indigo-700 font-medium">Predicted Next Month</p>
               <p className="text-lg font-bold text-purple-800">₹{predictions[0]?.predicted.toLocaleString()}</p>
             </div>
             <div className="text-center p-3 bg-blue-50 rounded-lg">

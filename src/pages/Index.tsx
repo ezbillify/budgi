@@ -202,7 +202,7 @@ const Index = () => {
           <p className="text-white/80 mb-6">Please sign in to access your financial dashboard</p>
           <Button 
             onClick={() => navigate('/auth')}
-            className="bg-white text-pink-800 hover:bg-white/90"
+            className="bg-white text-teal-700 hover:bg-white/90"
           >
             Go to Login
           </Button>
@@ -229,7 +229,7 @@ const Index = () => {
                 alt="BUDGI Logo" 
                 className="w-8 h-8 object-contain"
               />
-              <h1 className="text-2xl font-bold text-pink-800">BUDGI</h1>
+              <h1 className="text-2xl font-bold text-teal-700">BUDGI</h1>
             </div>
             <div className="flex items-center gap-4">
               <p className="text-sm text-muted-foreground">
@@ -363,7 +363,7 @@ const Index = () => {
             <div className="flex justify-center mb-6">
               <Button
                 onClick={() => setShowExpenseForm(true)}
-                className="bg-pink-800 hover:bg-pink-900 text-white"
+                className="bg-teal-700 hover:bg-teal-800 text-white"
                 size="lg"
               >
                 <PlusCircle className="w-5 h-5 mr-2" />
@@ -412,7 +412,7 @@ const Index = () => {
             <div className="flex justify-center mb-6">
               <Button
                 onClick={() => setShowGoalForm(true)}
-                className="bg-pink-800 hover:bg-pink-900 text-white"
+                className="bg-teal-700 hover:bg-teal-800 text-white"
                 size="lg"
               >
                 <Target className="w-5 h-5 mr-2" />
@@ -449,14 +449,14 @@ const Index = () => {
                               <Button 
                                 onClick={() => updateGoalProgress(goal.id, 500)}
                                 size="sm"
-                                className="bg-pink-800 hover:bg-pink-900 text-white"
+                                className="bg-teal-700 hover:bg-teal-800 text-white"
                               >
                                 +₹500
                               </Button>
                               <Button 
                                 onClick={() => updateGoalProgress(goal.id, 1000)}
                                 size="sm"
-                                className="bg-pink-800 hover:bg-pink-900 text-white"
+                                className="bg-teal-700 hover:bg-teal-800 text-white"
                               >
                                 +₹1000
                               </Button>
@@ -469,7 +469,7 @@ const Index = () => {
                             </div>
                             <div className="w-full bg-muted rounded-full h-3">
                               <div 
-                                className="bg-pink-600 h-3 rounded-full transition-all duration-300" 
+                                className="bg-teal-600 h-3 rounded-full transition-all duration-300" 
                                 style={{ width: `${Math.min(progress, 100)}%` }}
                               ></div>
                             </div>
@@ -499,7 +499,7 @@ const Index = () => {
             <div className="flex justify-center mb-6">
               <Button
                 onClick={() => setShowIncomeForm(true)}
-                className="bg-pink-800 hover:bg-pink-900 text-white"
+                className="bg-teal-700 hover:bg-teal-800 text-white"
                 size="lg"
               >
                 <IndianRupee className="w-5 h-5 mr-2" />

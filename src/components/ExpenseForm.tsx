@@ -84,7 +84,7 @@ export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onAddExpense, onClose 
                 ...formData, 
                 amount: e.target.value
               })}
-              className="bg-input-bg border-card-bg focus:border-pink-600"
+              className="bg-input-bg border-card-bg focus:border-teal-600"
               required
             />
           </div>
@@ -96,7 +96,7 @@ export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onAddExpense, onClose 
               onValueChange={(value) => setFormData({ ...formData, category: value })}
               required
             >
-              <SelectTrigger className="bg-input-bg border-card-bg focus:border-pink-600">
+              <SelectTrigger className="bg-input-bg border-card-bg focus:border-teal-600">
                 <SelectValue placeholder="Select category" />
               </SelectTrigger>
               <SelectContent className="bg-white border-card-bg z-50">
@@ -116,7 +116,7 @@ export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onAddExpense, onClose 
               placeholder="What did you spend on?"
               value={formData.notes}
               onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-              className="bg-input-bg border-card-bg focus:border-pink-600 resize-none"
+              className="bg-input-bg border-card-bg focus:border-teal-600 resize-none"
               rows={3}
             />
           </div>
@@ -128,7 +128,7 @@ export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onAddExpense, onClose 
               type="date"
               value={formData.date}
               onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-              className="bg-input-bg border-card-bg focus:border-pink-600"
+              className="bg-input-bg border-card-bg focus:border-teal-600"
               required
             />
           </div>
@@ -145,7 +145,7 @@ export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onAddExpense, onClose 
             <Button
               type="submit"
               disabled={!isValid || isSubmitting}
-              className="flex-1 bg-pink-800 hover:bg-pink-900 text-white disabled:opacity-50"
+              className="flex-1 bg-teal-700 hover:bg-teal-800 text-white disabled:opacity-50"
             >
               {isSubmitting ? 'Adding...' : 'Add Expense'}
             </Button>

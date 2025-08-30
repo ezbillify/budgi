@@ -150,7 +150,7 @@ export const RazorpayPayment: React.FC<RazorpayPaymentProps> = ({
         <div className="bg-white p-4 rounded-lg border">
           <div className="flex justify-between items-center">
             <span className="font-medium">Amount to Pay:</span>
-            <span className="text-2xl font-bold text-purple-600">₹{amount.toLocaleString()}</span>
+            <span className="text-2xl font-bold text-indigo-700">₹{amount.toLocaleString()}</span>
           </div>
           <p className="text-sm text-muted-foreground mt-1">{description}</p>
         </div>
@@ -195,7 +195,7 @@ export const RazorpayPayment: React.FC<RazorpayPaymentProps> = ({
         <Button
           onClick={handlePayment}
           disabled={loading}
-          className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3"
+          className="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-medium py-3"
           size="lg"
         >
           {loading ? 'Processing...' : `Pay ₹${amount.toLocaleString()} with Razorpay`}

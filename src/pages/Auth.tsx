@@ -194,7 +194,7 @@ export const Auth = () => {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+              className="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
               size="lg"
             >
               {loading ? 'Processing...' : (isLogin ? 'Sign In' : 'Create Account')}
@@ -214,7 +214,7 @@ export const Auth = () => {
               type="button"
               variant="outline"
               onClick={switchMode}
-              className="w-full border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
+              className="w-full border-indigo-700 text-indigo-700 hover:bg-indigo-700 hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
             >
               {isLogin 
                 ? "Create New Account" 

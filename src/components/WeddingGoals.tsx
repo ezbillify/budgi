@@ -88,7 +88,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
     <div className="space-y-6">
       <Card className="bg-gradient-to-r from-pink-50 to-rose-50 border-pink-200">
         <CardHeader>
-          <CardTitle className="text-pink-900 flex items-center gap-2">
+          <CardTitle className="text-teal-800 flex items-center gap-2">
             <Heart className="w-5 h-5" />
             Life Milestone Goals
           </CardTitle>
@@ -101,7 +101,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
             <Button
               variant={goalType === 'wedding' ? 'default' : 'outline'}
               onClick={() => setGoalType('wedding')}
-              className={goalType === 'wedding' ? 'bg-pink-600 hover:bg-pink-700' : 'border-pink-300 text-pink-700 hover:bg-pink-50'}
+              className={goalType === 'wedding' ? 'bg-teal-600 hover:bg-pink-700' : 'border-pink-300 text-pink-700 hover:bg-pink-50'}
             >
               <Heart className="w-4 h-4 mr-2" />
               Wedding Goals
@@ -129,7 +129,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
                     <div className="flex justify-between items-center">
                       <div className="flex items-center gap-3">
                         <div className={`p-2 rounded-full ${goalType === 'wedding' ? 'bg-pink-100' : 'bg-blue-100'}`}>
-                          <IconComponent className={`w-4 h-4 ${goalType === 'wedding' ? 'text-pink-600' : 'text-blue-600'}`} />
+                          <IconComponent className={`w-4 h-4 ${goalType === 'wedding' ? 'text-teal-600' : 'text-blue-600'}`} />
                         </div>
                         <div>
                           <h4 className="font-medium text-gray-900">{template.name}</h4>
@@ -139,7 +139,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
                       <Button
                         size="sm"
                         onClick={() => startTemplateGoal(template)}
-                        className={goalType === 'wedding' ? 'bg-pink-600 hover:bg-pink-700' : 'bg-blue-600 hover:bg-blue-700'}
+                        className={goalType === 'wedding' ? 'bg-teal-600 hover:bg-pink-700' : 'bg-blue-600 hover:bg-blue-700'}
                       >
                         Start
                       </Button>
@@ -165,7 +165,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle className="flex items-center gap-2">
-                    {goalType === 'wedding' ? <Heart className="w-5 h-5 text-pink-600" /> : <Baby className="w-5 h-5 text-blue-600" />}
+                    {goalType === 'wedding' ? <Heart className="w-5 h-5 text-teal-600" /> : <Baby className="w-5 h-5 text-blue-600" />}
                     Create {goalType === 'wedding' ? 'Wedding' : 'Maternity'} Goal
                   </DialogTitle>
                 </DialogHeader>
@@ -225,7 +225,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
 
                   <Button 
                     type="submit" 
-                    className={`w-full ${goalType === 'wedding' ? 'bg-pink-600 hover:bg-pink-700' : 'bg-blue-600 hover:bg-blue-700'}`}
+                    className={`w-full ${goalType === 'wedding' ? 'bg-teal-600 hover:bg-pink-700' : 'bg-blue-600 hover:bg-blue-700'}`}
                   >
                     Create Goal
                   </Button>
@@ -240,7 +240,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
       {weddingGoals.length > 0 && (
         <Card className="bg-white shadow-lg border border-card-bg">
           <CardHeader>
-            <CardTitle className="text-pink-900 flex items-center gap-2">
+            <CardTitle className="text-teal-800 flex items-center gap-2">
               <Heart className="w-5 h-5" />
               Wedding Goals Progress
             </CardTitle>
@@ -258,8 +258,8 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
                 return (
                   <div key={goal.id} className="p-4 bg-pink-50 rounded-lg border border-pink-200">
                     <div className="flex justify-between items-start mb-2">
-                      <h3 className="font-semibold text-pink-900">{goal.name}</h3>
-                      <Badge variant="outline" className="bg-pink-100 text-pink-800">
+                      <h3 className="font-semibold text-teal-800">{goal.name}</h3>
+                      <Badge variant="outline" className="bg-pink-100 text-teal-700">
                         {Math.round(progress)}%
                       </Badge>
                     </div>
@@ -269,7 +269,7 @@ export const WeddingGoals: React.FC<WeddingGoalsProps> = ({
                         <span>₹{Number(goal.current_savings).toLocaleString()} / ₹{Number(goal.target_amount).toLocaleString()}</span>
                       </div>
                       <Progress value={progress} className="h-3" />
-                      <div className="flex justify-between text-xs text-pink-600">
+                      <div className="flex justify-between text-xs text-teal-600">
                         <span>Frequency: {goal.frequency}</span>
                         {monthsToGoal > 0 && <span>Est. {monthsToGoal} months to goal</span>}
                         {goal.deadline && <span>Due: {new Date(goal.deadline).toLocaleDateString()}</span>}

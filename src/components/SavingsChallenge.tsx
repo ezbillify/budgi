@@ -75,7 +75,7 @@ export const SavingsChallenge: React.FC<SavingsChallengeProps> = ({
       <div className="flex justify-center">
         <Button
           onClick={() => setShowCreateForm(true)}
-          className="bg-pink-800 hover:bg-pink-900 text-white"
+          className="bg-teal-700 hover:bg-teal-800 text-white"
           size="lg"
         >
           <Plus className="w-5 h-5 mr-2" />
@@ -164,7 +164,7 @@ export const SavingsChallenge: React.FC<SavingsChallengeProps> = ({
                 <Button
                   type="submit"
                   disabled={isSubmitting || !formData.title || !formData.target_amount}
-                  className="flex-1 bg-pink-800 hover:bg-pink-900 text-white disabled:opacity-50"
+                  className="flex-1 bg-teal-700 hover:bg-teal-800 text-white disabled:opacity-50"
                 >
                   {isSubmitting ? 'Creating...' : 'Start Challenge'}
                 </Button>
@@ -225,7 +225,7 @@ export const SavingsChallenge: React.FC<SavingsChallengeProps> = ({
               <Button
                 onClick={() => handleAddProgress(activeChallenge.id)}
                 disabled={!progressAmounts[activeChallenge.id] || Number(progressAmounts[activeChallenge.id]) <= 0}
-                className="bg-pink-800 hover:bg-pink-900 text-white"
+                className="bg-teal-700 hover:bg-teal-800 text-white"
               >
                 Add Progress
               </Button>

@@ -119,7 +119,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-purple-900">₹{accommodationExpenses.toLocaleString()}</div>
-            <p className="text-xs text-purple-600">
+            <p className="text-xs text-indigo-700">
               Budget: ₹{Math.round(suggestedBudget.accommodation).toLocaleString()}
             </p>
           </CardContent>
@@ -173,7 +173,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Home className="w-4 h-4 text-purple-600" />
+                  <Home className="w-4 h-4 text-indigo-700" />
                   <span className="font-medium">Housing (30%)</span>
                 </div>
                 <span className={`text-sm font-medium ${getBudgetStatus(accommodationExpenses, suggestedBudget.accommodation).color}`}>
@@ -226,7 +226,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({
       {/* Student Tips */}
       <Card className="bg-gradient-to-r from-pink-50 to-rose-50 border-pink-200">
         <CardHeader>
-          <CardTitle className="text-pink-900 flex items-center gap-2">
+          <CardTitle className="text-teal-800 flex items-center gap-2">
             <Heart className="w-5 h-5" />
             Student Money Tips
           </CardTitle>
@@ -234,19 +234,19 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 bg-white rounded-lg border border-pink-200">
-              <h3 className="font-semibold text-pink-800 mb-2">💡 Save Smart</h3>
+              <h3 className="font-semibold text-teal-700 mb-2">💡 Save Smart</h3>
               <p className="text-sm text-pink-700">
                 Try to save at least 5% of your income. Even ₹{Math.round(suggestedBudget.savings).toLocaleString()}/month builds good habits!
               </p>
             </div>
             <div className="p-4 bg-white rounded-lg border border-pink-200">
-              <h3 className="font-semibold text-pink-800 mb-2">🍕 Budget Meals</h3>
+              <h3 className="font-semibold text-teal-700 mb-2">🍕 Budget Meals</h3>
               <p className="text-sm text-pink-700">
                 Cook with friends! Share grocery costs and make it fun while staying within budget.
               </p>
             </div>
             <div className="p-4 bg-white rounded-lg border border-pink-200">
-              <h3 className="font-semibold text-pink-800 mb-2">📱 Track Daily</h3>
+              <h3 className="font-semibold text-teal-700 mb-2">📱 Track Daily</h3>
               <p className="text-sm text-pink-700">
                 Use this app daily to track small expenses. They add up quickly!
               </p>

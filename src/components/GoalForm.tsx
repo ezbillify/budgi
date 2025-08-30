@@ -72,7 +72,7 @@ export const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal, onClose }) => {
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
       <Card className="w-full max-w-md bg-white shadow-xl">
         <CardHeader className="flex flex-row items-center justify-between">
-          <CardTitle className="text-pink-800">Create Savings Goal</CardTitle>
+          <CardTitle className="text-teal-700">Create Savings Goal</CardTitle>
           <Button variant="ghost" size="icon" onClick={handleClose}>
             <X className="w-4 h-4" />
           </Button>
@@ -86,7 +86,7 @@ export const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal, onClose }) => {
                 placeholder="e.g., Vacation Fund"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="bg-input-bg border-card-bg focus:border-pink-600"
+                className="bg-input-bg border-card-bg focus:border-teal-600"
                 required
               />
             </div>
@@ -100,7 +100,7 @@ export const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal, onClose }) => {
                 placeholder="Enter target amount"
                 value={formData.target_amount}
                 onChange={(e) => setFormData({ ...formData, target_amount: e.target.value })}
-                className="bg-input-bg border-card-bg focus:border-pink-600"
+                className="bg-input-bg border-card-bg focus:border-teal-600"
                 required
               />
             </div>
@@ -113,7 +113,7 @@ export const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal, onClose }) => {
                   setFormData({ ...formData, frequency: value })
                 }
               >
-                <SelectTrigger className="bg-input-bg border-card-bg focus:border-pink-600">
+                <SelectTrigger className="bg-input-bg border-card-bg focus:border-teal-600">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent className="bg-white border-card-bg z-50">
@@ -131,7 +131,7 @@ export const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal, onClose }) => {
                 type="date"
                 value={formData.deadline}
                 onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
-                className="bg-input-bg border-card-bg focus:border-pink-600"
+                className="bg-input-bg border-card-bg focus:border-teal-600"
               />
             </div>
 
@@ -147,7 +147,7 @@ export const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal, onClose }) => {
               <Button
                 type="submit"
                 disabled={isSubmitting || !formData.name || !formData.target_amount}
-                className="flex-1 bg-pink-800 hover:bg-pink-900 text-white disabled:opacity-50"
+                className="flex-1 bg-teal-700 hover:bg-teal-800 text-white disabled:opacity-50"
               >
                 {isSubmitting ? 'Creating...' : 'Create Goal'}
               </Button>
